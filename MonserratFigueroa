@@ -1,0 +1,21 @@
+
+package com.mycompany.myjframe;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class MyJFrame extends JFrame {
+    public JLabel myLabel;
+
+    public MyJFrame() {
+        JLabel myLabel = new JLabel("Hola Mundo");
+        this.add(myLabel);
+    }
+
+    public static void main(String[] args) {
+        MyJFrame frame = new MyJFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(100, 100);
+        frame.setVisible(true);
+    }
+}
